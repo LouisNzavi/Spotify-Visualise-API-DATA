@@ -20,9 +20,9 @@ const Tracks = () => {
         Authorization:
           "Basic " +
           new Buffer(
-            "9ac3ff1c79214695ad3af3601becdad7",
+            "#############################",
             ":",
-            "c1db27a06cb14d938bc040698c674372"
+            "#############################"
           ).toString("base64"),
       },
       data: "grant_type=client_credentials",

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function Artists() {
-  const CLIENT_ID = "f0860282488e4e60bff27e13356a00b1";
+  const CLIENT_ID = "################";
   const REDIRECT_URI = "http://localhost:3000";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
