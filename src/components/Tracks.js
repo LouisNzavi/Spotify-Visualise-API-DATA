@@ -59,6 +59,7 @@ const Tracks = () => {
     let names = [];
     let popularity = [];
 
+    // eslint-disable-next-line array-callback-return
     data.map((each) => {
       names.push(each.name);
       popularity.push(each.popularity);
