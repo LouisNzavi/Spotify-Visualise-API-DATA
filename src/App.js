@@ -1,11 +1,11 @@
 import "./App.css";
-import Tracks from "./components/Tracks";
+import Artists from "./components/Artists";
 
 function App() {
   return (
     <div className="App">
       <h1>Visualise Spotify API DATA</h1>
-      <Tracks />
+      <Artists />
     </div>
   );
 }
