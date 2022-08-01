@@ -4,7 +4,6 @@ import axios from "axios";
 
 const Tracks = () => {
   // Set up states for retrieving access token and top tracks
-  // eslint-disable-next-line no-unused-vars
   const [token, setToken] = useState("");
   const [tracks, setTracks] = useState([]);
 
@@ -20,11 +19,10 @@ const Tracks = () => {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization:
           "Basic " +
-          Buffer.from(
+          new Buffer(
             "9ac3ff1c79214695ad3af3601becdad7",
             ":",
-            "c1db27a06cb14d938bc040698c674372",
-            "base64"
+            "c1db27a06cb14d938bc040698c674372"
           ).toString("base64"),
       },
       data: "grant_type=client_credentials",
@@ -61,7 +59,6 @@ const Tracks = () => {
     let names = [];
     let popularity = [];
 
-    // eslint-disable-next-line array-callback-return
     data.map((each) => {
       names.push(each.name);
       popularity.push(each.popularity);
@@ -87,8 +84,8 @@ const Tracks = () => {
         layout={{
           width: 1000,
           height: 600,
-          // title: 'Taylor Swfit Top Tracks'
-          title: "<b>Taylor Swift Top Tracks</b> <br> <sub>US Market</sub>",
+          // title: 'Beyonce Top Tracks'
+          title: "<b>Beyonce top tracks</b> <br> <sub>UK Market</sub>",
           margin: {
             l: 100,
             r: 100,
